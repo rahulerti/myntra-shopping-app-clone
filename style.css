@@ -1,0 +1,99 @@
+body {
+    background-color: rgb(248, 225, 228);
+}
+
+.nav {
+    background-color: white;
+    position: sticky;
+}
+
+/* List styles for menu items */
+.lists {
+  
+    gap: 20px;
+}
+
+.lists > li {
+    display: flex;
+    margin: 0;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    
+}
+.lists> li:hover{
+    border: 5px solid red; /* Ensure the border has a style and color */
+}
+
+
+
+
+/* Slider styles */
+.slider {
+    width: 80%;
+    height: 600px;
+    margin-top: 40px;
+    margin-left: 150px;
+    background-size: cover;
+    animation: image 25s linear infinite 1s;
+ 
+}
+
+
+@keyframes image {
+    0%, 20% {
+        background-image: url('./image/ak-la.avif');
+    }
+    25%, 45% {
+        background-image: url('./image/dis-la1.avif');
+    }
+    50%, 70% {
+        background-image: url('./image/jak-la.jpg');
+    }
+    75%, 95% {
+        background-image: url('./image/kat-la.avif');
+    }
+    96%, 100% {
+        background-image: url('./image/kit-la.jpg');
+    }
+}
+
+.port img{
+ margin: 0;
+ padding: 0;
+ height: 300px;
+
+}
+
+.port{
+ justify-content: center;
+ margin-top: 50px;
+}
+
+
+/* Category text styles */
+.cati {
+    font-size: 50px;
+    margin-top: 70px;
+    text-shadow: 1px 1px 2px black;
+    display: flex;
+    background-color: aliceblue;
+    justify-content: center;
+    flex-direction: column;
+    height:fit-content;
+    width: fit-content;
+    justify-content: center;
+    margin-right: 200px;
+}
+.text{
+    font-size: 34px;
+}
+.cat{
+    height: 400px;
+}
+.cat img{
+    padding: 10px;
+    height:300px;
+    width: 200px;
+}
